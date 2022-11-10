@@ -175,7 +175,7 @@ address {
   margin-right: 50px;
 }
 
-.icon-contact {
+.contact-list__icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -274,21 +274,21 @@ address {
   padding-top: 0;
 }
 
-.about-list {
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__list {
   display: flex;
   gap: 30px;
 }
 
-.about-title {
-  margin-bottom: 50px;
-}
-
-.about-item {
+.about__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.about-upper-title {
+.upper {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -296,7 +296,7 @@ address {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.about-upper-text {
+.about-upper__text {
   padding-top: 27px;
   padding-bottom: 27px;
   font-weight: 700;
@@ -436,7 +436,7 @@ address {
   justify-content: space-between;
 }
 
-.footer-logo {
+.contact__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -445,32 +445,32 @@ address {
   color: #2196f3;
 }
 
-.footer-address {
+.address {
   margin-top: 20px;
 }
 
-.footer-item-address {
+.address__item-add {
   margin-bottom: 9px;
 }
 
-.footer-link-address {
+.address__link-add {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-link {
+.footer__link {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-link:hover, .footer-link:focus {
+.footer__link:hover, .footer__link:focus {
   color: #2196f3;
 }
 
@@ -483,17 +483,17 @@ address {
   color: #ffffff;
 }
 
-.footer-soc-list {
+.social__list {
   display: flex;
   gap: 10px;
 }
 
-.footer-soc-item {
+.social__item {
   width: 44px;
   height: 44px;
 }
 
-.footer-soc-link {
+.social__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,17 +503,17 @@ address {
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-soc-link:hover, .footer-soc-link:focus {
+.social__link:hover, .social__link:focus {
   background-color: #2196f3;
 }
 
-.footer-soc-logo {
+.social__logo {
   width: 20px;
   height: 20px;
   fill: #ffffff;
 }
 
-.mailing-input {
+.mailing__input {
   padding-left: 16px;
   width: 358px;
   height: 50px;
@@ -524,24 +524,24 @@ address {
   background-color: transparent;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mailing-input:focus {
+.mailing__input:focus {
   outline: 1px solid #2196f3;
 }
-.mailing-input::-moz-placeholder {
+.mailing__input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.mailing-input:-ms-input-placeholder {
+.mailing__input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.mailing-input::placeholder {
+.mailing__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -549,7 +549,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mailing-btn {
+.mailing__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -562,11 +562,11 @@ address {
   background-color: #2196f3;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mailing-btn:hover, .mailing-btn:focus {
+.mailing__btn:hover, .mailing__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.btn-text {
+.mailing__text {
   margin-right: 10px;
   font-weight: 700;
   font-size: 16px;
@@ -575,7 +575,7 @@ address {
   color: #ffffff;
 }
 
-.icon-mailing {
+.mailing__icon {
   width: 24px;
   height: 24px;
 }

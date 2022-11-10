@@ -2,21 +2,21 @@
   padding-top: 0;
 }
 
-.about-list {
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__list {
   display: flex;
   gap: 30px;
 }
 
-.about-title {
-  margin-bottom: 50px;
-}
-
-.about-item {
+.about__item {
   width: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.about-upper-title {
+.upper {
   position: absolute;
   bottom: 0;
 
@@ -26,7 +26,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.about-upper-text {
+.about-upper__text {
   padding-top: 27px;
   padding-bottom: 27px;
 
