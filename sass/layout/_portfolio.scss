@@ -112,5 +112,9 @@
   .project-link-img:hover & {
       transform: translateY(0);
     }
+
+        .project-link-img:focus & {
+          transform: translateY(0);
+        }
 }
 

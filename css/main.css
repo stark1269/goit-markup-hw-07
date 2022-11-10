@@ -678,6 +678,9 @@ address {
 .project-link-img:hover .project-overlay-text {
   transform: translateY(0);
 }
+.project-link-img:focus .project-overlay-text {
+  transform: translateY(0);
+}
 
 .is-hidden {
   visibility: hidden;
