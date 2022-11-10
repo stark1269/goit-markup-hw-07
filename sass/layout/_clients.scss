@@ -20,18 +20,20 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  color: var(--icons-color);
-  border: 1px solid var(--icons-color);
+  color: $icons-color;
+  border: 1px solid $icons-color;
   border-radius: 4px;
 
-  transition: color 250ms var(--transition), border 250ms var(--transition);
+  transition: color 250ms $transition, border 250ms $transition;
+  
+  &:hover,
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
 }
 
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
+
 
 .icon-clients {
   width: 106px;

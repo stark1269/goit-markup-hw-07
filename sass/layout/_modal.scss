@@ -11,7 +11,7 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms var(--transition), visibility 250ms var(--transition);
+  transition: opacity 250ms $transition, visibility 250ms $transition;
 }
 
 .modal {
@@ -23,13 +23,13 @@
   width: 528px;
   min-height: 581px;
 
-  background-color: var(--main-color);
+  background-color: $main-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) translateY(0) scale(1);
-  transition: transform 500ms var(--transition);
+  transition: transform 500ms $transition;
 }
 
 .is-hidden .modal {
@@ -50,13 +50,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  color: var(--accent-color);
-  transition: fill 250ms var(--transition);
-}
+  color: $accent-color;
+  transition: fill 250ms $transition;
 
-.modal-close:hover,
-.modal-close:focus {
-  fill: currentColor;
+  &:hover,
+    &:focus {
+      fill: currentColor;
+    }
 }
 
 .modal-title {
@@ -66,7 +66,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 /* Форма */
@@ -84,7 +84,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: var(--text-color);
+  color: $text-color;
   cursor: pointer;
 }
 
@@ -101,16 +101,16 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition: outline 250ms var(--transition);
+  transition: outline 250ms $transition;
   cursor: pointer;
 }
 
 .form-input:focus {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid $accent-color;
 }
 
 .form-input:focus+.icon-form {
-  fill: var(--accent-color);
+  fill: $accent-color;
 }
 
 .icon-form {
@@ -121,8 +121,8 @@
 
   width: 18px;
   height: 18px;
-  fill: var(--title-color);
-  transition: color 250ms var(--transition);
+  fill: $title-color;
+  transition: color 250ms $transition;
 }
 
 .textarea-label {
@@ -141,11 +141,11 @@
 
   resize: none;
   cursor: pointer;
-  transition: outline 250ms var(--transition);
+  transition: outline 250ms $transition;
 }
 
 .form-textarea:focus {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid $accent-color;
 }
 
 .form-textarea::placeholder {
@@ -171,23 +171,27 @@
   width: 16px;
   height: 15px;
 
-  border: 2px solid var(--title-color);
+  border: 2px solid $title-color;
   border-radius: 2px;
 }
 
 .checkbox:checked+.form-check {
-  border: 2px solid var(--accent-color);
-  background-color: var(--accent-color);
+  border: 2px solid $accent-color;
+  background-color: $accent-color;
   background-image: url(../images/check.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.checkbox:focus+.form-check {
+  border: 2px solid $accent-color;
 }
 
 .form-license {
   letter-spacing: 0.03em;
   line-height: 1.71;
 
-  color: var(--text-color);
+  color: $text-color;
   cursor: pointer;
 }
 
@@ -195,7 +199,7 @@
   letter-spacing: 0.03em;
   line-height: 1.71;
 
-  color: var(--accent-color);
+  color: $accent-color;
   text-decoration: underline;
 }
 
@@ -208,15 +212,15 @@
   line-height: 1.88;
   letter-spacing: 0.06em;
 
-  color: var(--main-color);
+  color: $main-color;
   background-color: #188ce8;
   border-radius: 4px;
   border: none;
 
-  transition: box-shadow 250ms var(--transition);
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 250ms $transition;
+  
+  &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }

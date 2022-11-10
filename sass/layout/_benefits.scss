@@ -16,7 +16,7 @@
   width: 270px;
   height: 120px;
 
-  background-color: var(--section-color);
+  background-color: $section-color;
   border-radius: 4px;
 }
 
@@ -33,7 +33,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: var(--title-color);
+  color: $title-color;
 }
 
 .benefits-text {

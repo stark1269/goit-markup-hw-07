@@ -8,7 +8,7 @@
   width: 100%;
   border-bottom: 1px solid #ececec;
 
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .main-nav {
@@ -26,7 +26,7 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .accent {
@@ -59,18 +59,20 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--title-color);
+  color: $title-color;
 
-  transition: color 250ms var(--transition);
+  transition: color 250ms $transition;
+  
+  &:hover,
+    &:focus {
+      color: $accent-color;
+    }
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
+
 
 .current {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .current::after {
@@ -83,7 +85,7 @@
   height: 4px;
   border-radius: 2px;
 
-  background-color: var(--accent-color);
+  background-color: $accent-color;
 }
 
 .header-list-contact {
@@ -100,19 +102,21 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--text-color);
+  color: $text-color;
 
-  transition: color 250ms var(--transition);
+  transition: color 250ms $transition;
+
+ &:hover,
+    &:focus {
+      color: $accent-color;
+    }
 }
 
 .header-item-contact:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-link-contact:hover,
-.header-link-contact:focus {
-  color: var(--accent-color);
-}
+
 
 .icon-contact {
   width: 16px;
