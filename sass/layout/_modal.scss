@@ -30,10 +30,10 @@
 
   transform: translate(-50%, -50%) translateY(0) scale(1);
   transition: transform 500ms $transition;
-}
 
-.is-hidden .modal {
-  transform: translate(-50%, -50%) translateY(-100%) scale(0);
+  .is-hidden & {
+      transform: translate(-50%, -50%) translateY(-100%) scale(0);
+    }
 }
 
 .modal-close {
@@ -103,14 +103,10 @@
 
   transition: outline 250ms $transition;
   cursor: pointer;
-}
 
-.form-input:focus {
-  outline: 1px solid $accent-color;
-}
-
-.form-input:focus+.icon-form {
-  fill: $accent-color;
+  &:focus {
+      outline: 1px solid $accent-color;
+    }
 }
 
 .icon-form {
@@ -123,6 +119,10 @@
   height: 18px;
   fill: $title-color;
   transition: color 250ms $transition;
+
+  .form-input:focus + & {
+      fill: $accent-color;
+    }
 }
 
 .textarea-label {
@@ -142,18 +142,18 @@
   resize: none;
   cursor: pointer;
   transition: outline 250ms $transition;
-}
 
-.form-textarea:focus {
-  outline: 1px solid $accent-color;
-}
+  &:focus {
+      outline: 1px solid $accent-color;
+    }
 
-.form-textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
+        &::placeholder {
+          font-size: 12px;
+          line-height: 1.16;
+          letter-spacing: 0.01em;
+    
+          color: rgba(117, 117, 117, 0.5);
+        }
 }
 
 .form-wrap {
@@ -173,18 +173,18 @@
 
   border: 2px solid $title-color;
   border-radius: 2px;
-}
+  transition: border 250ms $transition, background-color 250ms $transition;
 
-.checkbox:checked+.form-check {
-  border: 2px solid $accent-color;
-  background-color: $accent-color;
-  background-image: url(../images/check.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.checkbox:focus+.form-check {
-  border: 2px solid $accent-color;
+  .checkbox:checked + & {
+      border: 2px solid $accent-color;
+      background-color: $accent-color;
+      background-image: url(../images/check.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+        .checkbox:focus + & {
+          border: 2px solid $accent-color;
+        }
 }
 
 .form-license {

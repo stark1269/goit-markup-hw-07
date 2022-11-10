@@ -141,7 +141,6 @@ address {
 .current {
   color: #2196f3;
 }
-
 .current::after {
   content: "";
   position: absolute;
@@ -525,11 +524,9 @@ address {
   background-color: transparent;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .mailing-input:focus {
   outline: 1px solid #2196f3;
 }
-
 .mailing-input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -537,7 +534,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .mailing-input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -545,7 +541,6 @@ address {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .mailing-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -712,7 +707,6 @@ address {
   transform: translate(-50%, -50%) translateY(0) scale(1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .is-hidden .modal {
   transform: translate(-50%, -50%) translateY(-100%) scale(0);
 }
@@ -775,13 +769,8 @@ address {
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-
 .form-input:focus {
   outline: 1px solid #2196f3;
-}
-
-.form-input:focus + .icon-form {
-  fill: #2196f3;
 }
 
 .icon-form {
@@ -793,6 +782,9 @@ address {
   height: 18px;
   fill: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input:focus + .icon-form {
+  fill: #2196f3;
 }
 
 .textarea-label {
@@ -811,25 +803,21 @@ address {
   cursor: pointer;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-textarea:focus {
   outline: 1px solid #2196f3;
 }
-
 .form-textarea::-moz-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-textarea:-ms-input-placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .form-textarea::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -852,8 +840,8 @@ address {
   height: 15px;
   border: 2px solid #212121;
   border-radius: 2px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .checkbox:checked + .form-check {
   border: 2px solid #2196f3;
   background-color: #2196f3;
@@ -861,7 +849,6 @@ address {
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .checkbox:focus + .form-check {
   border: 2px solid #2196f3;
 }

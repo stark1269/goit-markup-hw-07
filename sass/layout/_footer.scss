@@ -96,7 +96,6 @@
     }
 }
 
-
 .footer-soc-logo {
   width: 20px;
   height: 20px;
@@ -114,19 +113,19 @@
   color: $main-color;
   background-color: transparent;
   transition: outline 250ms $transition;
-}
 
-.mailing-input:focus {
-  outline: 1px solid $accent-color;
-}
+  &:focus {
+      outline: 1px solid $accent-color;
+    }
 
-.mailing-input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-
-  color: rgba(255, 255, 255, 0.6);
+        &::placeholder {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 1.25;
+          letter-spacing: 0.03em;
+    
+          color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 .mailing-btn {
@@ -159,8 +158,6 @@
 
   color: $main-color;
 }
-
-
 
 .icon-mailing {
   width: 24px;
