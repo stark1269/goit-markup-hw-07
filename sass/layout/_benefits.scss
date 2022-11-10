@@ -1,13 +1,13 @@
-.benefits-list {
+.benefits__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits-item {
+.benefits__item {
   width: calc((100% - 90px) / 4);
 }
 
-.icons-benefits {
+.benefits__icons {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -20,12 +20,12 @@
   border-radius: 4px;
 }
 
-.benefits-icon {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
 
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -36,7 +36,7 @@
   color: $title-color;
 }
 
-.benefits-text {
+.benefits__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }

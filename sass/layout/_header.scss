@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.header-logo {
+.navigation__logo {
   margin-right: 93px;
 
   font-family: 'Raleway', sans-serif;
@@ -33,24 +33,24 @@
   color: #000000;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
 }
 
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-item {
+.navigation__item {
   position: relative;
 }
 
-.header-link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -86,11 +86,11 @@
     }
 }
 
-.header-list-contact {
+.contact-list {
   display: flex;
 }
 
-.header-link-contact {
+.contact-list__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -110,7 +110,7 @@
     }
 }
 
-.header-item-contact:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 

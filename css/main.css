@@ -93,7 +93,7 @@ address {
   justify-content: space-between;
 }
 
-.header-logo {
+.navigation__logo {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -107,24 +107,24 @@ address {
   color: #000000;
 }
 
-.header-nav {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
 }
 
-.header-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-item {
+.navigation__item {
   position: relative;
 }
 
-.header-link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -134,7 +134,7 @@ address {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link:hover, .header-link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
 
@@ -152,11 +152,11 @@ address {
   background-color: #2196f3;
 }
 
-.header-list-contact {
+.contact-list {
   display: flex;
 }
 
-.header-link-contact {
+.contact-list__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -167,11 +167,11 @@ address {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-link-contact:hover, .header-link-contact:focus {
+.contact-list__link:hover, .contact-list__link:focus {
   color: #2196f3;
 }
 
-.header-item-contact:not(:last-child) {
+.contact-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -201,7 +201,7 @@ address {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -214,7 +214,7 @@ address {
   color: #ffffff;
 }
 
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
   font-family: inherit;
   font-weight: 700;
@@ -227,20 +227,20 @@ address {
   background-color: #2196f3;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.benefits-list {
+.benefits__list {
   display: flex;
   gap: 30px;
 }
 
-.benefits-item {
+.benefits__item {
   width: calc((100% - 90px) / 4);
 }
 
-.icons-benefits {
+.benefits__icons {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
@@ -251,12 +251,12 @@ address {
   border-radius: 4px;
 }
 
-.benefits-icon {
+.benefits__icon {
   width: 70px;
   height: 70px;
 }
 
-.benefits-title {
+.benefits__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -265,7 +265,7 @@ address {
   color: #212121;
 }
 
-.benefits-text {
+.benefits__text {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
