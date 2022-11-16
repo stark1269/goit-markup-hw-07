@@ -9,24 +9,15 @@
   color: $main-color;
 }
 
-.footer-section {
+.footer__container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
 
-.contact__logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-
-  color: $accent-color;
-}
-
-.address {
-  margin-top: 20px;
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .address__item-add {
